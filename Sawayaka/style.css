@@ -1,0 +1,888 @@
+/*
+Theme Name: SAWAYAKA DENTAL CLINIC
+Theme URI: https://www.sejuku.net/
+Description: SAMURAI ENGINEERのWordPress教材
+Version: 1.0.0
+Author: SAMURAI ENGINEER
+Author URI: https://www.sejuku.net/
+*/
+
+
+/* 共通部分 */
+body{
+      font-family: "Inter", sans-serif;
+}
+
+a{
+    color: black;
+
+}
+
+/* ヘッダー */
+.logo{
+    max-width: 180px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.home{
+    font-size: 45px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: rgba(61, 181, 181, 0.74);
+    height: 140px;
+    justify-content: center;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+/* ナビゲーションメニュー */
+.menu{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    list-style:none;
+}
+
+.menu a{
+    text-decoration: none;
+    padding-left:0;
+    color: rgba(61, 181, 181, 0.74);
+    font-weight: 500;
+    display: inline-block;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav + .nav {
+  border-left: 1px solid #333;
+  padding-left: 20px;
+}
+
+/* ハンバーガーメニュー799px以下 */
+
+/* メイン画像 */
+.mainpic{
+    width: 100%;
+}
+
+/* クリニック紹介 */
+#rounded-box {
+    height: auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.75);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline rgba(61, 181, 181, 0.74);
+    text-underline-offset: 10px;
+}
+
+.maintext{
+    text-align: left;
+    margin: 10px auto;
+    padding: 0 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 700px;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.shortintro{
+    display: flex;
+    max-width: 800px;
+    align-items: center;
+    text-align: center;
+    column-gap: 120px;
+    margin: 100px auto;
+}
+
+.shortintro1{
+    max-width: 200px;
+    max-height: 200px;
+    align-items: center;
+    vertical-align: auto;
+}
+
+p{
+    white-space: nowrap;
+}
+
+.kuwashiku{
+    text-align: center;
+}
+
+.kuwashikupic {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(61, 181, 181, 0.74);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.kuwashikupic:hover {
+    background-color: rgba(61, 181, 181, 1);
+}
+
+
+/* ブログ */
+.blog{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 50px;
+    text-decoration: underline rgba(61, 181, 181, 0.74);
+    text-underline-offset: 10px;
+}
+
+.blogcontents{
+    font-size: 20px;
+    text-align: left;
+    text-decoration: underline rgba(165, 165, 165, 1);
+    text-underline-offset: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.blogtitle{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 50px;
+    text-decoration: underline rgba(61, 181, 181, 0.74);
+    text-underline-offset: 10px;
+}
+
+.post-date,
+.post-cat,
+.post-cat a {
+  background-color: #ccc;
+  text-decoration: none;
+  width: fit-content;
+  font-size: 13px;
+}
+
+.post-date a,
+.post-cat a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* フッター */
+.footer{
+    background-color: rgba(61, 181, 181, 0.74);
+    margin-top: 100px;
+    padding: 20px 0;
+}
+
+.footerlogo{
+    max-width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.footeralign{
+    display: flex;
+    justify-content: center;
+    column-gap: 120px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footeralign > div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footeradd{
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footermenu {
+    list-style: none;
+}
+
+.footermenu li{
+    padding-left: 0;
+}
+
+.footermenu a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.rights{
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* クリニック紹介ページ */
+
+.intro1{
+    display: flex;
+    max-width: 800px;
+    margin: 50px auto;
+    column-gap: 100px;
+}
+
+.intropic{
+    align-items: center;
+    vertical-align: auto;
+}
+
+
+/* 当院の特徴 */
+.feature1{
+    display: flex;
+    max-width: 800px;
+    margin: 50px auto;
+    column-gap: 100px;
+}
+
+.featurepic{
+    align-items: center;
+    vertical-align: auto;
+}
+
+.feature1 p{
+    text-align: left;
+    margin: 10px auto;
+    padding: 0 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 700px;
+    word-break: break-word;
+    white-space: normal;  
+}
+
+
+/* 院長挨拶 */
+.rounded-box{
+    height: auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.75);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.greeting{
+  display: flex;
+  column-gap: 20px;
+}
+
+.greeting p{
+  text-align: center;
+    margin: 10px auto;
+    padding: 0 10px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    max-width: 700px;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.director{
+    width: 350px;
+}
+
+.greeting h2{
+    text-align: center;
+    font-size: 15px;
+}
+
+/* スタッフ紹介 */
+.staff{
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    column-gap: 50px;
+}
+
+.pc-only {
+  display: inline;
+}
+
+/* 診療内容 */
+.treatment{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    margin: 50px auto;
+}
+
+.detail2{
+    background-color: rgba(242, 242, 242, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+    width: 40%;
+}
+
+.detail3{
+    border-left:10px solid rgba(61, 181, 181, 0.74);
+    padding-left: 20px;
+}
+
+.treatmentpic{
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+.detail{
+    margin: 50px auto;
+}
+
+.time{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.treatmenttext {
+  word-break: break-word;
+  white-space: normal;
+  padding: 30px;
+}
+
+.detail2 p {
+  font-size: 16px;
+  line-height: 1.8;
+  word-break: break-word;
+  white-space: normal;
+  margin-top: 10px;
+}
+
+/* アクセス */
+.map{
+    max-width: 800px;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.access{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+/* オンライン予約 */
+.form{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.next{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.confirm{
+    text-align: center;
+}
+
+.confirmpic{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* 予約完了 */
+.complete{
+    font-size: 25px;
+    text-align: center;
+}
+
+.completepic{
+    text-align: center;
+}
+
+.comp{
+    width: 200px;
+}
+
+/* お問い合わせフォーム */
+/* 
+Change the color of the submit button
+Doc link: https://wpforms.com/developers/how-to-change-the-submit-button-color/
+*/
+
+.wpforms-form button[type=submit] {
+    background-color: rgba(61, 181, 181, 0.74) !important;
+    border-color: rgba(61, 181, 181, 0.74) !important;
+    color: #fff !important;
+    transition: background 0.3s ease-in-out;
+}
+ 
+.wpforms-form button[type=submit]:hover {
+    background-color: rgba(61, 181, 181, 1) !important;
+}
+
+.inquiry {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.inquiry-input input,
+.inquiry-input textarea {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1em;
+}
+
+.wpforms-submit {
+  width: auto;
+  padding: 0.5em 2em;
+}
+
+/* WPFormsの確認メッセージ全体を中央寄せ＆白背景に */
+.wpforms-confirmation-container-full{
+  background-color: #fff !important;
+  text-align: center;
+  padding: 2em;
+  font-family: "Helvetica", sans-serif;
+  border: none !important;
+}
+
+.wpforms-confirmation-container-full p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+
+}
+
+.wpforms-confirmation-container-full img {
+  max-width: 140px;
+  margin-top: 1em;
+}
+
+/* オンライン予約 */
+.form-area{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bottomBarPanel{
+    max-width: 100px;
+}
+
+.book_now_button {
+    height: 40px;
+    border-radius: 3px;
+    background-color: rgba(61, 181, 181, 0.74) !important;
+    color: #fff !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: 0.3s ease-in-out;
+    padding: 0;
+}
+
+.book_now_button:hover {
+    background-color: rgba(61, 181, 181, 1) !important;
+}
+
+#paymentPanel.cartPanel, #nextAndReturnPanel.bottomBarPanel{
+    text-align: center !important;
+}
+
+/* ブログページ */
+.blogdetail{
+    font-size: 20px;
+    text-align: left;
+    width: fit-content;
+    margin: 100px auto 300px auto;
+}
+
+.blog-list{
+    max-width: 800px; 
+    margin: 0 auto;  
+    padding: 20px;
+    list-style: none;
+}
+
+.blog-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.blog-item p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+.post-content{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.post-content p {
+    text-align: left;
+}
+
+.post-body {
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.8;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+} 
+
+
+  /* ここからはスマホ */
+@media screen and (max-width: 768px) {
+  /* ヘッダー調整 */
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    position: static;
+    margin: 0 auto;
+  }
+
+  .home {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(61, 181, 181, 0.95);
+    padding: 20px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu a {
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    display: none; /* 最初は非表示 */
+  }
+
+  .menu ul.active {
+    display: flex;
+  }
+
+  .nav + .nav {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  /* メイン画像 */
+  .mainpic {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 紹介ボックス */
+  #rounded-box,
+  .shortintro,
+  .feature1,
+  .intro1,
+  .staff,
+  .treatment,
+  .rounded-box,
+  .blog-list,
+  .blog-item,
+  .post-content,
+  .post-body,
+  .greeting,
+  .footeralign{
+    max-width: 90%;
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  .shortintro {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+
+  .detail2 {
+    width: 100%;
+  }
+
+/* トップページの紹介 */
+  #rounded-box {
+    width: 95%; 
+    height: auto; 
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .maintext {
+    line-height: 1.6;
+    text-align: center;
+    word-break: break-word;
+    white-space: normal !important;
+  }
+
+.shortintro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .shortintro1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shortintro1 p {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    padding: 0 10px;
+    white-space: normal;
+  }
+
+  .kuwashiku{
+    padding-top: 70px;
+  }
+
+ /* トップページのブログ */
+  .blog-item p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+
+  /* フッター */
+  .footeralign {
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: center;
+  }
+
+  /* クリニック紹介 */
+  .intro1 img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .maintext p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .intro1 h1{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    word-break: break-word;
+    font-size: 20px;
+  }
+
+  /* 当院の特徴 */
+  .feature img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .feature p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .feature h1{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    word-break: break-word;
+    font-size: 20px;
+  }
+
+  /*  院長紹介 */
+  #director img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+  /*  スタッフ紹介 */
+  .pc-only {
+    display: none;
+}
+  .staff p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .name{
+    text-align: center;
+  }
+
+  .name p{
+    font-weight: bold;
+  }
+
+  /* 診療内容 */
+ .treatment p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+ }
+
+ /* 診療時間 */
+.time img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.map iframe{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+  /* 予約フォーム */
+  .inquiry-input input,
+  .inquiry-input textarea,
+  .form-area {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-area{
+    max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  }
+
+  /* ブログページ */
+  .blogdetail {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .blog-item h3 {
+    font-size: 18px;
+  }
+}
+
+  /* ハンバーガーメニュー */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  background: #3db5b5;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .menu ul.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
